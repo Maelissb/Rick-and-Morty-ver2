@@ -1,0 +1,20 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background: linear-gradient(180deg, 
+  #0A7F7E 3%, 
+  #60777D 23%, 
+  #D46781 51%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Fait que le fond couvre 100% de la hauteur de la fenêtre */
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
