@@ -1,12 +1,24 @@
 .character-container
-    display: flex
-    justify-content: center  
-    
-.character-list
-    display: grid
-    grid-template-columns: repeat(4, 1fr) 
-    gap: 16px 
-    max-width: 1200px 
-    width: 100%
-  
+  display: flex
+  justify-content: center
 
+.character-list
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 16px
+  max-width: 1200px
+  width: 100%
+  justify-items: center // Centre chaque carte de personnage
+
+
+@media (max-width: 1024px)
+  .character-list
+    grid-template-columns: repeat(3, 1fr) // 3 colonnes pour les écrans moyens
+
+@media (max-width: 810px)
+  .character-list
+    grid-template-columns: repeat(2, 1fr) // 2 colonnes pour les tablettes
+
+@media (max-width: 480px)
+  .character-list
+    grid-template-columns: repeat(1, 1fr) // 1 colonnes pour les mobiles
