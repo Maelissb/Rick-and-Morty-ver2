@@ -2,11 +2,11 @@ services:
   frontend:
     container_name: Brandify-project
     build: 
-      context: ./brandify
-      dockerfile: ./src/dockerfile
+      context: ./brandify-project
+      dockerfile: Dockerfile
     ports:
       -"5173:5173"
     volumes:
-      -./app/Brandify-project
+      - ./Brandify-project:/app
     environment:
-      - NODE_ENV=development
+      - /app/node_modules
