@@ -2,6 +2,8 @@ import Search from '../Search/search';
 import FilterButtons from '../Button/filterButtons';
 import PropTypes from 'prop-types';
 import '../../styles/_header.sass'
+import searchIcon from '../../assets/images/search.png'
+
 
 const Header = ({ onFilter, onSearch }) => {
   return (
@@ -11,7 +13,10 @@ const Header = ({ onFilter, onSearch }) => {
       </div>
       <div className='barre'>
         <FilterButtons onFilter={onFilter} />
-        <Search onSearch={onSearch} />
+        <div className='search'>
+          <img src={searchIcon} alt="Search Icon" />
+          <Search onSearch={onSearch} />
+        </div>
       </div>
     </header>
   );
